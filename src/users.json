@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "user": "Elon Reeve Musk",
+        "tweets": 777,
+        "followers": 100500,
+        "avatar": "../src/components/images/Hansel.png"
+    },
+    {
+        "id": 2,
+        "user": "Glen Shark",
+        "tweets": 560,
+        "followers": 90230,
+        "avatar": "url.jpg"
+    },
+    {
+        "id": 3,
+        "user": "Ewa Mackintosh",
+        "tweets": 1080,
+        "followers": 150821,
+        "avatar": "url.jpg"
+    }
+]
