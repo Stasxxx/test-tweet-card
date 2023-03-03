@@ -5,6 +5,8 @@ export const ItemTweet = styled.li`
 max-width: 380px;
 box-sizing: border-box;
 padding: 28px 36px 36px 36px;
+margin-left: auto;
+margin-right: auto;
 background-image: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
 box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
 border-radius: 20px;
@@ -23,13 +25,11 @@ left: -16px;
 `;
 
 export const TweetPhoto = styled.img`
-display: block;
 width: 308px;
 `;
 
 export const UserImgBorder = styled.img`
 position: absolute;
-display: block;
 width: 80px;
 left: 50%;
 bottom: 50%;
@@ -37,7 +37,6 @@ transform: translate(-50%,50%)
 `
 
 export const UserImg = styled.img`
-display: block;
 position: absolute;
 background-image: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
 width: 62px;
@@ -48,11 +47,6 @@ left: 50%;
 bottom: 50%;
 transform: translate(-50%,40%)
 `;
-
-export const UserInfoCont = styled.div`
-/* margin-left: auto;
-margin-right: auto; */
-`
 
 export const Text = styled.p`
 font-family: 'Montserrat';
@@ -85,9 +79,6 @@ margin-left: auto;
 margin-right: auto;
 
 color: #373737;
-border: none;
-outline: none;
-cursor: pointer;
 background-color: #EBD8FF;
 box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
 border-radius: 10px;

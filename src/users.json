@@ -19,5 +19,19 @@
         "tweets": 1080,
         "followers": 150821,
         "avatar": "user2"
+    },
+    {
+        "id": 4,
+        "user": "Abram Clinton",
+        "tweets": 380,
+        "followers": 70821,
+        "avatar": "user3"
+    },
+     {
+        "id": 5,
+        "user": "Cristin Camelton",
+        "tweets":952,
+        "followers": 701355,
+        "avatar": "user4"
     }
 ]
