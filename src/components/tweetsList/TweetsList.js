@@ -13,21 +13,33 @@ export const TweetsList = () => {
     const [tweetUsers, setTweetUsers] = useState(() => JSON.parse(localStorage.getItem(KEY)) ?? usersList);
     const [userId, setUserId] = useState('');
 
-    useEffect(() => {
-        following();
-    },[userId]);
-
-    const following = () => {
-        const updatedTweets = tweetUsers.map(item => {
+//    const following = () => {
+//         const updatedTweets = tweetUsers.map(item => {
+//             if (item.id === userId.id) {
+//                 return { ...item, isFollowing: userId.followingUser }
+//             }
+//             return item
+//         });
+//         setTweetUsers(updatedTweets);
+//         localStorage.setItem(KEY, JSON.stringify(updatedTweets))
+//         setUserId('')
+//     };
+    const updatedTweets = tweetUsers.map(item => {
             if (item.id === userId.id) {
                 return { ...item, isFollowing: userId.followingUser }
             }
             return item
-        });
-        setTweetUsers(updatedTweets);
-        localStorage.setItem(KEY, JSON.stringify(updatedTweets))
-        setUserId('')
-    };
+    });
+    
+    useEffect(() => {
+        if (userId) {
+            setTweetUsers(updatedTweets);
+            localStorage.setItem(KEY, JSON.stringify(updatedTweets))
+            setUserId('')
+        }
+      
+    },[updatedTweets, userId]);
+
 
     return (
         <>
