@@ -7,7 +7,8 @@ import ellipse from '../images/Ellipse.png';
 
 export const TweetsItem = ({ card: { id, tweets, followers, avatar, isFollowing }, setUserId }) => {
     const [followingUser, setFollowingUser] = useState(isFollowing);
-    const [signedUp, setSignedUp] = useState(followers)
+    const [signedUp, setSignedUp] = useState(followers);
+
     const formatingFollowers = new Intl.NumberFormat("en-US", {
         style: "decimal",
     }).format(signedUp);
